@@ -1,0 +1,46 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TRIVANTA — BACKEND + PUBLIC URL (READ THIS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LOCAL BACKEND (XAMPP)
+---------------------
+1. Apache MUST be running (green in XAMPP).
+2. MySQL MUST be running (green) — signup/login need the database.
+   If MySQL shows "Start", click Start. Fix port conflicts if it fails.
+3. The project MUST be reachable at the same URL the app uses, usually:
+      http://localhost/trivanta/backend/test.php
+   Open that in a browser — you should see JSON {"status":"ok",...}.
+   If you get 404, copy this whole project folder to:
+      C:\xampp\htdocs\trivanta\
+   so the path exists (or change VITE_API_BASE_URL in frontend/.env.local).
+
+4. One-time database setup (browser):
+      http://localhost/trivanta/backend/setup_database.php
+
+5. Frontend dev server uses a proxy so the API is called on the same
+   origin as Vite — run from /frontend:
+      npm run dev
+   Then use the Local / Network URL Vite prints (e.g. http://localhost:3000).
+
+
+A "PERMANENT LINK" FOR ANY DEVICE (INTERNET)
+---------------------------------------------
+There is no single URL that works from every phone on the internet
+unless you host the site on a public server or use a tunnel.
+
+Option A — Free tunnel (good for demos; URL changes on free tier)
+  • Install ngrok: https://ngrok.com
+  • With XAMPP Apache on port 80:
+      ngrok http 80
+  • Share the https URL ngrok gives you (points to your PC while it runs).
+
+Option B — Cloudflare Tunnel (free, stable hostname possible)
+  • https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/
+
+Option C — Real hosting (true permanent link)
+  • Upload the PHP backend to any PHP host; import schema from
+    backend/database/schema.sql; set DB credentials in backend/config/db.php.
+  • Build the React app (npm run build), upload trivanta-website-preview
+    to static hosting; set VITE_API_BASE_URL at build time to your live API URL.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

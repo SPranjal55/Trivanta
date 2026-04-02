@@ -1,0 +1,27 @@
+# Dependencies
+frontend/node_modules/
+
+# Env / secrets (never commit real passwords or API keys)
+.env
+.env.local
+.env.*.local
+
+# Build output (regenerate with npm run build)
+trivanta-website-preview/
+frontend/dist/
+
+# Logs & OS noise
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# PHP (optional local logs)
+backend/logs/*.log
+
+# Archives you might create locally
+*.zip

@@ -1,0 +1,88 @@
+const blogPosts = [
+  {
+    id: 1,
+    slug: 'digital-marketing-trends-2025',
+    category: 'Marketing',
+    categoryColor: '#E86A17',
+    title: '10 Digital Marketing Trends You Cannot Ignore in 2025',
+    excerpt:
+      'From AI-powered campaigns to hyper-personalization, discover the strategies that are reshaping how brands connect with their audiences.',
+    author: 'Priya Sharma',
+    authorAvatar: 'PS',
+    date: 'March 15, 2025',
+    readTime: '6 min read',
+    image: 'https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&auto=format&fit=crop&q=80',
+  },
+  {
+    id: 2,
+    slug: 'ui-ux-design-principles',
+    category: 'Design',
+    categoryColor: '#F36C21',
+    title: 'The 7 UI/UX Design Principles Every Designer Must Know',
+    excerpt:
+      'Great design is invisible. Learn the fundamental principles that separate average interfaces from ones users genuinely love to use.',
+    author: 'Arjun Bose',
+    authorAvatar: 'AB',
+    date: 'March 10, 2025',
+    readTime: '8 min read',
+    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&auto=format&fit=crop&q=80',
+  },
+  {
+    id: 3,
+    slug: 'web-development-career-guide',
+    category: 'Development',
+    categoryColor: '#C9580E',
+    title: 'How to Start Your Web Development Career in 2025',
+    excerpt:
+      'A complete roadmap for beginners — from learning HTML to landing your first developer job. No computer science degree required.',
+    author: 'Kavya Reddy',
+    authorAvatar: 'KR',
+    date: 'March 5, 2025',
+    readTime: '10 min read',
+    image: 'https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=600&auto=format&fit=crop&q=80',
+  },
+  {
+    id: 4,
+    slug: 'data-analytics-for-business',
+    category: 'Data',
+    categoryColor: '#E86A17',
+    title: 'How Data Analytics Is Transforming Small Businesses',
+    excerpt:
+      'You do not need a massive budget to use data effectively. Here is how small businesses are using analytics to outpace competitors.',
+    author: 'Neha Gupta',
+    authorAvatar: 'NG',
+    date: 'February 28, 2025',
+    readTime: '7 min read',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80',
+  },
+  {
+    id: 5,
+    slug: '3d-animation-beginners-guide',
+    category: 'Animation',
+    categoryColor: '#FF8C3A',
+    title: "Getting Started with 3D Animation: A Beginner's Complete Guide",
+    excerpt:
+      'Blender is free, powerful, and industry-standard. This guide walks you through your first 3D scene in under 60 minutes.',
+    author: 'Vikram Nair',
+    authorAvatar: 'VN',
+    date: 'February 20, 2025',
+    readTime: '9 min read',
+    image: 'https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=600&auto=format&fit=crop&q=80',
+  },
+  {
+    id: 6,
+    slug: 'video-editing-tips-youtube',
+    category: 'Video',
+    categoryColor: '#C9580E',
+    title: '8 Video Editing Tips That Will Make Your YouTube Channel Stand Out',
+    excerpt:
+      'Cut through the noise with these pro-level editing techniques used by creators with millions of subscribers — no expensive gear needed.',
+    author: 'Ananya Kapoor',
+    authorAvatar: 'AK',
+    date: 'February 14, 2025',
+    readTime: '5 min read',
+    image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&auto=format&fit=crop&q=80',
+  },
+];
+
+export default blogPosts;
