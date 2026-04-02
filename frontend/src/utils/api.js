@@ -21,6 +21,10 @@ function getBaseURL() {
       return '/api-proxy';
     }
   }
+  // Vercel / static hosting: never call localhost from the user's browser
+  if (import.meta.env.PROD) {
+    return '';
+  }
   return 'http://localhost/trivanta/backend/api';
 }
 

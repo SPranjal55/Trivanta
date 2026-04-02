@@ -9,9 +9,9 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: './',
+    base: '/',
     build: {
-      outDir: '../trivanta-website-preview',
+      outDir: 'dist',
       emptyOutDir: true,
       rollupOptions: {
         output: {
